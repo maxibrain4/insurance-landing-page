@@ -1,0 +1,120 @@
+/* font-family: 'DM Serif Display', serif;
+font-family: 'Karla', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*******************************/
+/*HEADER SECTION*/
+/*******************************/
+.header {
+  padding: 0 100px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(256, 26%, 20%);
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+}
+.nav-cta:link,
+.nav-cta:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  color: hsl(256, 26%, 20%);
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  padding: 12px 32px;
+  border: 2px solid hsl(256, 26%, 20%);
+  transition: all 0.3s;
+}
+.nav-cta:active,
+.nav-cta:hover {
+  background-color: hsl(256, 26%, 20%);
+  color: #fff;
+  cursor: pointer;
+}
+/*******************************/
+/*HER0 SECTION*/
+/*******************************/
+.section-hero {
+  background-color: hsl(256, 26%, 20%);
+  padding: 48px 0 96px 0;
+}
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 42fr 58fr;
+  grid-template-rows: 460px;
+  align-items: center;
+  gap: 96px;
+  color: #fff;
+}
+
+main {
+  position: relative;
+}
+.hero-img {
+  position: absolute;
+  top: 10%;
+  left: 43%;
+}
+.primary-heading {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: 32px;
+}
+.hero-description {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  padding: 12px 32px;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.btn:active,
+.btn:hover {
+  background-color: #fff;
+  transition: all 3s;
+  color: hsl(256, 26%, 20%);
+  cursor: pointer;
+  border: none;
+}
+
+/*******************************/
+/*HOW SECTION*/
+/*******************************/
+.section-how {
+  padding: 48px 0 96px 0;
+}
