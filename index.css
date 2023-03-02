@@ -58,9 +58,9 @@ font-family: 'Karla', sans-serif; */
 .hero {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 65px;
   display: grid;
-  grid-template-columns: 42fr 58fr;
+  grid-template-columns: 45fr 55fr;
   grid-template-rows: 460px;
   align-items: center;
   gap: 96px;
@@ -73,7 +73,7 @@ main {
 .hero-img {
   position: absolute;
   top: 10%;
-  left: 43%;
+  left: 44%;
 }
 .primary-heading {
   font-family: "DM Serif Display", serif;
