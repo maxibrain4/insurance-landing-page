@@ -5,6 +5,11 @@ font-family: 'Karla', sans-serif; */
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
 /*******************************/
 /*HEADER SECTION*/
 /*******************************/
@@ -72,8 +77,13 @@ main {
 }
 .hero-img {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 44%;
+}
+.line {
+  width: 40%;
+  height: 2px;
+  margin-bottom: 50px;
 }
 .primary-heading {
   font-family: "DM Serif Display", serif;
@@ -115,6 +125,69 @@ main {
 /*******************************/
 /*HOW SECTION*/
 /*******************************/
+.line2 {
+  width: 160px;
+  height: 2px;
+  margin-bottom: 50px;
+}
+.head-adj {
+  margin-bottom: 60px;
+}
 .section-how {
+  padding: 250px 0 96px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.feature-title {
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-family: "DM Serif Display", serif;
+}
+.feature-text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: hsl(273, 4%, 51%);
+}
+svg {
+  margin-bottom: 28px;
+}
+/*******************************/
+/*CTA-SECTION*/
+/*******************************/
+.cta-section {
   padding: 48px 0 96px 0;
+}
+.cta {
+  background-color: hsl(256, 26%, 20%);
+  height: 270px;
+  /* display: grid;
+  grid-template-columns: 2fr 1fr;
+  place-items: center; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 90px;
+  background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 460px;
+}
+.secondary-heading {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 1;
+  color: #fff;
+}
+/*******************************/
+/*FOOTER SECTION*/
+/*******************************/
+.footer {
 }
