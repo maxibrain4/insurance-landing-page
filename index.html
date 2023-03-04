@@ -11,7 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="query.css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <header class="header">
@@ -26,6 +30,8 @@
           <li><a href="#" class="main-nav-link nav-cta"> View plans</a></li>
         </ul>
       </nav>
+       <button class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon></button>
     </header>
     <main>
       <section class="section-hero">
@@ -44,15 +50,21 @@
             <a href="#" class="btn"> VIEW PLANS</a>
           </div>
           <div class="hero-image-box">
-            <img
-              src="/images/image-intro-desktop.jpg"
-              class="hero-img"
-              alt="family of 3"
+             <picture>
+            <source
+              media="max-width: 700px"
+              srcset="/images/image-intro-mobile.jpg"
             />
+            <source
+              media="min-width: 700px"
+              srcset="/images/image-intro-desktop.jpg"
+            />
+            <img src="/images/image-intro-desktop.jpg" class="hero-img" alt="" />
+          </picture>
           </div>
         </div>
       </section>
-      <section class="section-how container">
+      <section class="section-features container">
         <hr class="line2"></hr>
         <h1 class="primary-heading head-adj">We’re different</h1>
         <div class="featuresbody grid">
@@ -88,13 +100,64 @@
           <h2 class="secondary-heading">Find out more <br> about how we work</h2>
           </div>
           <div class="cta-btn">
-          <a href="#" class="btn">How we work</a>
+          <a href="#" class="btn">HOW WE WORK</a>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-
+      <div class="container">
+        <div class="logoicons">
+          <div>
+          <a href="#"><img src="/images/logo.svg" class="logo" alt="insurance logo" /></a>
+          </div>
+          <div>
+          <ul class="social-links">
+            <li><a href="footer-link"><ion-icon class="social-icon"  name="logo-facebook"></ion-icon></a></li>
+            <li><a href="footer-link"><ion-icon  class="social-icon" name="logo-twitter"></ion-icon></a></li>
+            <li><a href="footer-link"><ion-icon  class="social-icon" name="logo-pinterest"></ion-icon></a></li>
+            <li><a href="footer-link"><ion-icon  class="social-icon" name="logo-instagram"></ion-icon></a></li>
+          </ul>
+          </div>
+        </div>
+        <hr class="footerline"></hr>
+        <div class="main-footer-content grid-4-cols ">
+          <nav class="nav-col">
+          <p class="footer-heading">Our company</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">How we work</a></li>
+              <li><a class="footer-link" href="#">Why Insure?</a></li>
+              <li><a class="footer-link" href="#">View plans</a></li>
+              <li><a class="footer-link" href="#">Reviews</a></li>
+            </ul>
+          </nav>
+           <nav class="nav-col">
+          <p class="footer-heading">  Help me</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#"> FAQ</a></li>
+              <li><a class="footer-link" href="#">Terms of use</a></li>
+              <li><a class="footer-link" href="#">Privacy policy</a></li>
+              <li><a class="footer-link" href="#">Cookies</a></li>
+            </ul>
+          </nav>
+           <nav class="nav-col">
+          <p class="footer-heading"> Contact</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Sales</a></li>
+              <li><a class="footer-link" href="#">Support</a></li>
+              <li><a class="footer-link" href="#">Live chat</a></li>
+            </ul>
+          </nav>
+           <nav class="nav-col">
+          <p class="footer-heading"> Others</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">  Careers</a></li>
+              <li><a class="footer-link" href="#">Press</a></li>
+              <li><a class="footer-link" href="#">Licenses</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
